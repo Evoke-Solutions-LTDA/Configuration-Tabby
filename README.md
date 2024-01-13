@@ -1,5 +1,8 @@
 ### Instalação do Terminal Tabby
 
+![image](https://github.com/Evoke-Solutions-LTDA/Configuration-Tabby/assets/47836230/76e0fe5c-4ea4-4ba4-a4c2-85e63c736f33)
+
+
 1. **Baixar o Instalador do Tabby**:
    - Acesse o site oficial do Tabby em [Tabby](https://tabby.sh/).
    - Selecione a versão adequada para o seu sistema operacional (Windows, macOS ou Linux).
