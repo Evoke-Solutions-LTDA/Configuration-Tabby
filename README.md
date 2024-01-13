@@ -36,7 +36,7 @@
      ```lua
      load(io.popen('oh-my-posh init cmd --config "C:\\{Local do seu Tema}\\theme.omp.json"'):read("*a"))()
      ```
-   - O `theme.omp.json` deve ser substituído pelo caminho do tema JSON que você deseja usar. Você pode encontrar temas prontos no [GitHub do On My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) ou baixar o que esta o tema que eu personalizei [Tema Personalizado](https://github.com/JanDeDobbeleer/oh-my-posh).
+   - O `theme.omp.json` deve ser substituído pelo caminho do tema JSON que você deseja usar. Você pode encontrar temas prontos no [GitHub do On My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) ou baixar o que esta o tema que eu personalizei [Tema Personalizado](https://github.com/Evoke-Solutions-LTDA/Configuration-Tabby/blob/main/evoke.omp.json).
 
 3. **Aplicar as Mudanças**:
    - Reinicie o terminal para aplicar as mudanças.
