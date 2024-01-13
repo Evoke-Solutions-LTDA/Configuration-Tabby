@@ -16,27 +16,44 @@
 
 1. **Instalar o On My Posh**:
    - O On My Posh é um framework de prompt para o PowerShell, mas também pode ser usado em outros shells.
-   - Para Windows, você pode instalar o On My Posh via winget com o comando:
+   - Para Windows, você pode instalar o On My Posh via winget com o comando: [Referência](https://ohmyposh.dev/docs/installation/windows)
      ```cmd
      winget install JanDeDobbeleer.OhMyPosh -s winget
      ```
-   - Para MacOS, você pode instalar o On My Posh via brew com o comando:
+   - Para MacOS, você pode instalar o On My Posh via brew com o comando: [Referência](https://ohmyposh.dev/docs/installation/macos)
      ```brew
      brew install jandedobbeleer/oh-my-posh/oh-my-posh
      ```
-   - Para Linux, você pode instalar o On My Posh via curl com o comando:
+   - Para Linux, você pode instalar o On My Posh via curl com o comando: [Referência](https://ohmyposh.dev/docs/installation/linux)
      ```curl
      curl -s https://ohmyposh.dev/install.sh | bash -s
      ```
 
-2. **Configurar o On My Posh**:
+2. **Configurar o On My Posh no Windows**:
    - Após a instalação, você pode configurar o On My Posh editando o perfil do seu terminal.
-   - Para o Windows você pode localizar o caminho `C:\Users\SeuUser\AppData\Local\clink`.
+   - Para o Windows você pode localizar o caminho `C:\Users\{Seu User}\AppData\Local\clink`.
    - Adicione um script oh-my-posh.lua no diretório com o seguinte codigo:
      ```lua
      load(io.popen('oh-my-posh init cmd --config "C:\\{Local do seu Tema}\\theme.omp.json"'):read("*a"))()
      ```
    - O `theme.omp.json` deve ser substituído pelo caminho do tema JSON que você deseja usar. Você pode encontrar temas prontos no [GitHub do On My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) ou baixar o que esta o tema que eu personalizei [Tema Personalizado](https://github.com/Evoke-Solutions-LTDA/Configuration-Tabby/blob/main/evoke.omp.json).
+  
+   ### Mudando o Tema do Oh My Posh no macOS e Linux
+
+   1. **Localizar o Arquivo de Perfil do Shell**: 
+      - Identifique qual shell você está utilizando (Bash, Zsh, ou Fish). 
+      - Para o Bash, o arquivo de perfil é geralmente `~/.bashrc` ou `~/.bash_profile`.
+      - Para o Zsh, é `~/.zshrc`.
+      - Para o Fish, é `~/.config/fish/config.fish`.
+
+   2. **Editar o Arquivo de Perfil**:
+      - Abra o arquivo de perfil em um editor de texto. Por exemplo, `nano ~/.bashrc` para editar o `.bashrc` no Bash.
+      - Localize a linha que inicializa o Oh My Posh, algo como:
+      ```bash
+      eval "$(oh-my-posh init bash --config /path/to/your/theme.omp.json)"
+      ```
+      Substitua `/path/to/your/theme.omp.json` pelo caminho do tema desejado.
+   
 
 3. **Aplicar as Mudanças**:
    - Reinicie o terminal para aplicar as mudanças.
